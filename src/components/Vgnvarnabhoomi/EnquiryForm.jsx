@@ -222,7 +222,7 @@ export default function EnquiryForm() {
                       <FaHome
                         style={{ color: "#d90005", marginRight: "6px" }}
                       />
-                      Plots Ranging from 497, 1195 Sq feet
+                      Plots Ranging from 1195 Sq feet
                     </p>
                     <p>
                       <FaClipboard

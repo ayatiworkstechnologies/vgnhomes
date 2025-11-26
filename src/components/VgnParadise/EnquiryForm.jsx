@@ -268,7 +268,7 @@ export default function EnquiryForm() {
                         icon={faHome}
                         style={{ color: "#d90005" }}
                       />{" "}
-                      Plots Ranging from 646 - 1486 sq.ft.
+                      Plots Ranging from 1114 - 1486 sq.ft.
                     </p>
                     <p className="mb-0">
                       <FontAwesomeIcon
