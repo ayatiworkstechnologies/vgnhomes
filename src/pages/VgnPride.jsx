@@ -10,6 +10,7 @@ import Rera from "../components/VgnPride/Rera.jsx";
 import SubNav from "../components/VgnPride/SubNav.jsx";
 import Faq from "../components/Nri/Faq.jsx";
 
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 
 
@@ -55,6 +56,7 @@ export default function VgnPride() {
       {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq />
       <Rera />
       <SubFooter />

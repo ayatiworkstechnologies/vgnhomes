@@ -10,6 +10,8 @@ import Rera from "../components/VgnGrandeur/Rera.jsx";
 import Faq from "../components/Nri/Faq.jsx";
 import SubNav from "../components/VgnKrystalPeak/SubNav.jsx";
 
+import VgnAdvantages from '../components/Home/VgnAdvantages';
+
 
 
 export default function VgnKrystalPeak() {
@@ -54,6 +56,7 @@ export default function VgnKrystalPeak() {
         {/* ✅ Content */}
       <EnquiryForm/>
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <Rera />
       <SubFooter />

@@ -7,6 +7,7 @@ import SubFooter from "../components/VgnSamudra/SubFooter";
 import Rera from "../components/VgnSamudra/Rera";
 import Faq from "../components/Nri/Faq";
 import SubNav from "../components/VgnSamudra/SubNav";
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 export default function VgnSamudra() {
   const bannerRef = useRef(null);
@@ -50,6 +51,7 @@ export default function VgnSamudra() {
       {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <Rera/>
       <SubFooter />

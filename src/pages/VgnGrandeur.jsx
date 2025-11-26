@@ -10,6 +10,8 @@ import Rera from "../components/VgnGrandeur/Rera.jsx";
 import Faq from "../components/VgnGrandeur/Faq.jsx";
 import SubNav from "../components/VgnGrandeur/SubNav.jsx";
 
+import VgnAdvantages from '../components/Home/VgnAdvantages';
+
 
 export default function VgnGrandeur() {
   const bannerRef = useRef(null);
@@ -53,6 +55,7 @@ export default function VgnGrandeur() {
         {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <Rera />
       <SubFooter />

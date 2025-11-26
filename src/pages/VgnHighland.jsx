@@ -9,7 +9,7 @@ import SubFooter from "../components/VgnHighland/SubFooter";
 import Rera from "../components/VgnHighland/Rera";
 import Faq from "../components/Nri/Faq";
 import SubNav from "../components/VgnHighland/SubNav";
-
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 
 export default function VgnHighland() {
@@ -54,6 +54,7 @@ export default function VgnHighland() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <Rera/>
       <SubFooter />

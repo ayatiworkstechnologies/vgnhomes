@@ -9,6 +9,7 @@ import SubFooter from "../components/VgnPrideVilla/SubFooter.jsx";
 import Rera from "../components/VgnPrideVilla/Rera.jsx";
 import Faq from "../components/Nri/Faq.jsx";
 import SubNav from "../components/VgnPrideVilla/SubNav.jsx";
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 export default function VgnPrideVilla() {
   const bannerRef = useRef(null);
@@ -52,6 +53,7 @@ export default function VgnPrideVilla() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <Rera/>
       <SubFooter />

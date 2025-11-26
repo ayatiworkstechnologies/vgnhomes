@@ -9,6 +9,7 @@ import BrandIconSectionInner from "../components/BrandIconSectionIneer.jsx";
 import Rera from "../components/VgnParadise/Rera.jsx";
 import Faq from "../components/Nri/Faq.jsx";
 import SubNav from "../components/VgnParadise/SubNav.jsx";
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 export default function VgnParadise() {
   const bannerRef = useRef(null);
@@ -52,6 +53,7 @@ export default function VgnParadise() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <Rera/>
       <SubFooter />

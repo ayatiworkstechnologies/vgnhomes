@@ -10,6 +10,8 @@ import Faq from "../components/Nri/Faq";
 import '../style/VgnHeritage.css';
 import SubNav from "../components/VgnHeritage/SubNav";
 
+import VgnAdvantages from '../components/Home/VgnAdvantages';
+
 
 export default function VgnHeritage() {
   const bannerRef = useRef(null);
@@ -52,6 +54,7 @@ export default function VgnHeritage() {
       <div className="pt-20 md:pt-28">
         <EnquiryForm />
         <ExploreProjects />
+        <VgnAdvantages/>
         <Faq />
         <BrandIconSectionInner />
         <SubFooter />

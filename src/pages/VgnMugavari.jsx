@@ -9,6 +9,7 @@ import BrandIconSection from "../components/BrandIconSection.jsx";
 import SubFooter from "../components/VgnMugavari/SubFooter.jsx";
 import Faq from "../components/Nri/Faq.jsx";
 import SubNav from "../components/VgnMugavari/SubNav.jsx";
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 
 
@@ -54,6 +55,7 @@ export default function VgnMugavari() {
          {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <BrandIconSection />
       <SubFooter />

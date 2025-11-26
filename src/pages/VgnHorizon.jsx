@@ -10,6 +10,7 @@ import SubFooter from "../components/VgnHorizon/SubFooter.jsx";
 import Rera from "../components/VgnHorizon/Rera.jsx";
 import Faq from "../components/Nri/Faq.jsx";
 import SubNav from "../components/VgnHorizon/SubNav.jsx";
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 
 
@@ -55,6 +56,7 @@ export default function VgnHorizon() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq />
       <Rera />
       <SubFooter />

@@ -9,6 +9,7 @@ import Rera from "../components/Vgnvarnabhoomi/Rera";
 import Faq from "../components/Nri/Faq";
 import SubNav from "../components/Vgnvarnabhoomi/SubNav";
 
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 
 export default function Vgnvarnabhoomi() {
@@ -53,6 +54,7 @@ export default function Vgnvarnabhoomi() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <Rera/>
       <SubFooter />

@@ -9,6 +9,7 @@ import SubNav from '../components/VgnAspire/SubNav.jsx';
 
 import "../style/VgnAspire.css";
 import { useEffect, useRef, useState } from "react";
+import VgnAdvantages from '../components/Home/VgnAdvantages';
 
 
 
@@ -56,6 +57,7 @@ export default function VgnAspireGardens() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
+      <VgnAdvantages/>
       <Faq/>
       <BrandIconSection/>
       <SubFooter />
