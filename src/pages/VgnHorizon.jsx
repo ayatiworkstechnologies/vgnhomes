@@ -56,7 +56,7 @@ export default function VgnHorizon() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq />
       <Rera />
       <SubFooter />

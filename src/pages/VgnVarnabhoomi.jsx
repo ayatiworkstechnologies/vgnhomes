@@ -54,7 +54,7 @@ export default function Vgnvarnabhoomi() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <Rera/>
       <SubFooter />

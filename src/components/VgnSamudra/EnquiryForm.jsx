@@ -54,12 +54,12 @@ export default function EnquiryForm() {
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
-  const advantages = [
+    const advantages = [
     {
       icon: advIcon1,
       text: (
         <>
-          82 Years of
+          83 Years of
           <br />
           business expertise
         </>
@@ -69,7 +69,7 @@ export default function EnquiryForm() {
       icon: advIcon2,
       text: (
         <>
-          245+ <br />
+          250+ <br />
           projects
         </>
       ),
@@ -78,7 +78,7 @@ export default function EnquiryForm() {
       icon: advIcon3,
       text: (
         <>
-          60,000+
+          65,000+
           <br />
           customers
         </>
@@ -86,7 +86,7 @@ export default function EnquiryForm() {
     },
     {
       icon: advIcon4,
-      text: <>850+ acres of plot property developed</>,
+      text: <>1000+ acres of plot property developed</>,
     },
     {
       icon: advIcon5,

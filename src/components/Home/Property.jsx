@@ -41,7 +41,7 @@ const properties = [
     isNew: true,
     location: "Ottiyambakkam, Chennai.",
     type: "Plots",
-    size: "721 - 2525 Sq ft",
+    size: "721 - 2525 Sq feet",
     status: "Ready to Construct",
     btnText: "VIEW MORE",
     link: "/vgn-heritage-springz/index",

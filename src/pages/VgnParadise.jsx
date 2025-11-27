@@ -53,7 +53,7 @@ export default function VgnParadise() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <Rera/>
       <SubFooter />

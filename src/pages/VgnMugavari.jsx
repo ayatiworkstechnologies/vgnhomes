@@ -55,7 +55,7 @@ export default function VgnMugavari() {
          {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <BrandIconSection />
       <SubFooter />

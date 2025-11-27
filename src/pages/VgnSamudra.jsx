@@ -51,7 +51,7 @@ export default function VgnSamudra() {
       {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <Rera/>
       <SubFooter />

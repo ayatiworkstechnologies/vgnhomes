@@ -57,7 +57,7 @@ export default function VgnAspireGardens() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <BrandIconSection/>
       <SubFooter />

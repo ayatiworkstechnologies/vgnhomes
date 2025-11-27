@@ -53,7 +53,7 @@ export default function VgnPrideVilla() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <Rera/>
       <SubFooter />

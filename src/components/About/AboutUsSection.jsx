@@ -4,9 +4,9 @@ import CountUp from 'react-countup';
 import headBorder from '/head-border.png'; // Adjust path accordingly
 
 const stats = [
-  { value: 81, suffix: '+', label: 'Years of business expertise' },
-  { value: 240, suffix: '+', label: 'Projects' },
-  { value: 60000, suffix: '+', label: 'Happy Customers' },
+  { value: 83, suffix: '+', label: 'Years of business expertise' },
+  { value: 250, suffix: '+', label: 'Projects' },
+  { value: 65000, suffix: '+', label: 'Happy Customers' },
   { value: 1000, suffix: '+', label: 'Acres of plot property developed' },
   { value: 20, suffix: '', label: 'Million sq.ft. of residential projects' },
 ];

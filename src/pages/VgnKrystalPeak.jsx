@@ -56,7 +56,7 @@ export default function VgnKrystalPeak() {
         {/* ✅ Content */}
       <EnquiryForm/>
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <Rera />
       <SubFooter />

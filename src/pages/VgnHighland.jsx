@@ -54,7 +54,7 @@ export default function VgnHighland() {
        {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <Rera/>
       <SubFooter />

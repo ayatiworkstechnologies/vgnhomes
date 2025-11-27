@@ -56,7 +56,7 @@ export default function VgnPride() {
       {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq />
       <Rera />
       <SubFooter />

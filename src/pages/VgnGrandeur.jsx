@@ -55,7 +55,7 @@ export default function VgnGrandeur() {
         {/* ✅ Content */}
       <EnquiryForm />
       <ExploreProjects />
-      <VgnAdvantages/>
+      {/* <VgnAdvantages/> */}
       <Faq/>
       <Rera />
       <SubFooter />

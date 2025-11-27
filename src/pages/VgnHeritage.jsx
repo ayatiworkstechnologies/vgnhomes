@@ -54,7 +54,7 @@ export default function VgnHeritage() {
       <div className="pt-20 md:pt-28">
         <EnquiryForm />
         <ExploreProjects />
-        <VgnAdvantages/>
+        {/* <VgnAdvantages/> */}
         <Faq />
         <BrandIconSectionInner />
         <SubFooter />
