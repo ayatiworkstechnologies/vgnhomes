@@ -7,18 +7,18 @@ import UpcomingModal from "../UpcomingModal";
 import { Link } from "react-router-dom"; // Use this if you're using React Router
 
 const properties = [
-  {
-    title: "Celebrity Farms",
-    image: CelebrityFarms,
-    location: "Opp. Mahindra world city.",
-    type: "Farm lands",
-    size: "22 Cents",
-    status: "Launching soon",
-  },
+  // {
+  //   title: "Celebrity Farms",
+  //   image: CelebrityFarms,
+  //   location: "Opp. Mahindra world city.",
+  //   type: "Farm lands",
+  //   size: "22 Cents",
+  //   status: "Launching soon",
+  // },
   {
     image: VGNkrystal,
     title: "VGN Krystal Peak",
-    location: "Iyyappanthangal, Porur",
+    location: "Avadi, Chennai.",
     size: "581 - 3061 Sq feet",
     type: "Flats",
     status: "Launching soon",

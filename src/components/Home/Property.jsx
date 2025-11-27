@@ -11,8 +11,21 @@ import VGNHighland from "@/assets/ongoing/project31.jpg";
 import VGNAspireGardens from "@/assets/ongoing/project35.jpg";
 import VGNPridedeVilla from "@/assets/ongoing/project34.jpg";
 import VGNClassique from "@/assets/ongoing/project24.jpg";
+import CelebrityFarms from "@/assets/ongoing/project25.jpg";
 
 const properties = [
+  {
+      title: "Celebrity Farms",
+      location: "Opp. Mahindra world city.",
+      type: "Farm lands",
+      size: "22 Cents",
+      status: "Ready to Construct",
+      image: CelebrityFarms,
+      isNew: true,
+    btnText: "VIEW MORE",
+    link: "#",
+    },
+  
   {
     title: "VGN Paradise",
     location: "Tiruvottiyur (Wimco nagar).",

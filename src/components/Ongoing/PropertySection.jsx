@@ -17,10 +17,20 @@ import VGNMugavariPhase from "@/assets/ongoing/project10-1.jpg";
 
 
 import VGNVarnabhoomi from "@/assets/ongoing/project5.jpg";
+import CelebrityFarms from "@/assets/ongoing/project25.jpg";
 
 
 const properties = [
  
+  {
+    title: "Celebrity Farms",
+    location: "Opp. Mahindra world city.",
+    type: "Farm lands",
+    size: "22 Cents",
+    status: "Ready to Construct",
+    image: CelebrityFarms,
+  link: "#",
+  },
   {
     title: "VGN Heritage Springz",
     location: "Ottiyambakkam, Chennai.",
