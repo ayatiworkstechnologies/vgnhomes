@@ -26,7 +26,7 @@ import SliderMob_9 from "@/assets/slider/sliderMob-8.jpg";
 /* Add link for each slide */
 const slides = [
   // { desktop: Slider_9, mobile: SliderMob_9, link: "/" },
-  { desktop: Slider_8, mobile: SliderMob_8, link: "/vgn-grandeur/index" },
+  // { desktop: Slider_8, mobile: SliderMob_8, link: "/vgn-grandeur/index" },
   { desktop: Slider_7, mobile: SliderMob_7, link: "/vgn-paradise/index" },
   { desktop: Slider_5, mobile: SliderMob_5, link: "#" },
   // { desktop: Slider_6, mobile: SliderMob_6, link: "/vgn-paradise/index" },
