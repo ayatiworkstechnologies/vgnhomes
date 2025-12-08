@@ -9,12 +9,12 @@ import Slider_2_Mobile from "@/assets/vgn-grandeur/hero-3-1.png";
 import Slider_3_Mobile from "@/assets/vgn-grandeur/vgn-grandeur-mob.jpg";
 
 const slides = [
-  {
-    image: Slider_3,
-    mobileImage: Slider_3_Mobile,
-    title: '',
-    description: '',
-  },
+  // {
+  //   image: Slider_3,
+  //   mobileImage: Slider_3_Mobile,
+  //   title: '',
+  //   description: '',
+  // },
   {
     image: Slider_1,
     mobileImage: Slider_1_Mobile,
