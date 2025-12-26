@@ -26,13 +26,12 @@ const properties = [
     link: "/vgn-krystal-peak/index",
   },
   {
-    title: "VGN MERIDIAN HEIGHTS ",
+    title: "-",
     image: vgnMeridian,
     location: "Gerugambakkam.",
     type: "Flats",
-    size: "800 - 1200 Sq feet",
-    status: "Coming soon",
-    link: "#",
+    size: "-",
+    status: "Launching soon",
   },
 ];
 
@@ -45,7 +44,10 @@ const UpcomingProjects = () => {
   return (
     <div className="py-5" style={{ background: "#fef7ef" }}>
       <div className="text-center mb-3 heading">
-        <h4 className="d-inline-flex align-items-center" style={{ fontSize: "1.8rem" }}>
+        <h4
+          className="d-inline-flex align-items-center"
+          style={{ fontSize: "1.8rem" }}
+        >
           <img
             className="head-border"
             src="/head-border.png"
@@ -90,10 +92,16 @@ const UpcomingProjects = () => {
                   )}
                 </div>
 
-                <div className="card-body property-item bg-white d-flex flex-column flex-grow-1" style={{ padding: "25px" }}>
+                <div
+                  className="card-body property-item bg-white d-flex flex-column flex-grow-1"
+                  style={{ padding: "25px" }}
+                >
                   <h5 className="mb-3">{item.title}</h5>
 
-                  <div className="d-flex flex-wrap mb-3" style={{ fontSize: "0.95rem" }}>
+                  <div
+                    className="d-flex flex-wrap mb-3"
+                    style={{ fontSize: "0.95rem" }}
+                  >
                     <div className="me-4 mb-2">
                       <i className="bi bi-geo-alt-fill text-danger me-1"></i>
                       {item.location}
@@ -104,7 +112,10 @@ const UpcomingProjects = () => {
                     </div>
                   </div>
 
-                  <div className="d-flex flex-wrap mb-3" style={{ fontSize: "0.95rem" }}>
+                  <div
+                    className="d-flex flex-wrap mb-3"
+                    style={{ fontSize: "0.95rem" }}
+                  >
                     <div className="me-4 mb-2">
                       <i className="bi bi-aspect-ratio-fill text-danger me-1"></i>
                       {item.size}
@@ -117,7 +128,11 @@ const UpcomingProjects = () => {
 
                   <div className="mt-auto text-center">
                     {item.link ? (
-                      <Link to={item.link} className="site-btn5 px-4" style={{textDecoration: "none"}}>
+                      <Link
+                        to={item.link}
+                        className="site-btn5 px-4"
+                        style={{ textDecoration: "none" }}
+                      >
                         VIEW DETAILS
                       </Link>
                     ) : (
@@ -125,7 +140,10 @@ const UpcomingProjects = () => {
                         <button className="site-btn5 px-4" onClick={handleShow}>
                           ENQUIRE NOW
                         </button>
-                        <UpcomingModal show={showModal} handleClose={handleClose} />
+                        <UpcomingModal
+                          show={showModal}
+                          handleClose={handleClose}
+                        />
                       </>
                     )}
                   </div>
