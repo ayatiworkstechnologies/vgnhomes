@@ -26,11 +26,11 @@ const properties = [
     link: "/vgn-krystal-peak/index",
   },
   {
-    title: "-",
+    title: "",
     image: vgnMeridian,
     location: "Gerugambakkam.",
-    type: "Flats",
-    size: "-",
+    type: "Coming Soon",
+    size: "",
     status: "Launching soon",
   },
 ];
