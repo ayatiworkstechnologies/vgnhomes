@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import CelebrityFarms from "@/assets/ongoing/project25.jpg";
+import vgnMeridian from "@/assets/ongoing/project26.jpg";
 import VGNkrystal from "@/assets/vgn-krystal/Banner.webp";
 import UpcomingModal from "../UpcomingModal";
 import { Link } from "react-router-dom"; // Use this if you're using React Router
@@ -23,6 +24,15 @@ const properties = [
     type: "Flats",
     status: "Launching soon",
     link: "/vgn-krystal-peak/index",
+  },
+  {
+    title: "VGN MERIDIAN HEIGHTS ",
+    image: vgnMeridian,
+    location: "Gerugambakkam.",
+    type: "Flats",
+    size: "800 - 1200 Sq feet",
+    status: "Coming soon",
+    link: "#",
   },
 ];
 
