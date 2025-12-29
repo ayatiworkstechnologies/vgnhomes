@@ -42,7 +42,7 @@ under ground EB is provided and also we have provided Under ground sewage, under
   },
   {
     question: "What is the Price ?",
-    answer: `Price starts from 6999/- min and goes upto 7999/- plus other charges as applicable.`,
+    answer: `Price starts from 8999/- min and goes upto 9999/- plus other charges as applicable.`,
   },
   {
     question: "Why should we invest in VGN GRANDEUR ?",
