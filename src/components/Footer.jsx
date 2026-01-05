@@ -255,47 +255,48 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="copyright-text">
-        <div className="">
-          <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center text-white small gap-3 text-center text-md-start">
-            <p className="mb-0 footer-content">
-              ©&nbsp;2025&nbsp;VGN&nbsp;Homes&nbsp;-&nbsp;All&nbsp;Rights&nbsp;Reserved.
-            </p>
+  <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center text-white small gap-3 text-center text-md-start">
 
-            <p className="mb-0 footer-content d-flex align-items-center justify-content-center">
-              Website&nbsp;Maintained&nbsp;by&nbsp;
-              <strong className="ms-1">Ayatiworks</strong>
-              <a
-                href="https://ayatiworks.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ms-2"
-              >
-                <img
-                  src="/web_logo.png"
-                  alt="Ayatiworks Logo"
-                  style={{ height: "40px" }}
-                />
-              </a>
-            </p>
+    <p className="mb-0 footer-content">
+      © {new Date().getFullYear()} VGN Homes - All Rights Reserved.
+    </p>
 
-            <p className="mb-0 footer-content copy-txt2">
-              <Link
-                to="/privacy-policy"
-                className="text-white text-decoration-none me-2"
-              >
-                Privacy&nbsp;Policy
-              </Link>
-              <span className="text-white">|</span>
-              <Link
-                to="/disclaimer"
-                className="text-white text-decoration-none ms-2"
-              >
-                Disclaimer
-              </Link>
-            </p>
-          </div>
-        </div>
-      </div>
+    <p className="mb-0 footer-content d-flex align-items-center justify-content-center">
+      Website Maintained by
+      <strong className="ms-1">Ayatiworks</strong>
+      <a
+        href="https://ayatiworks.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="ms-2"
+      >
+        <img
+          src="/web_logo.png"
+          alt="Ayatiworks Logo"
+          style={{ height: "40px" }}
+        />
+      </a>
+    </p>
+
+    <p className="mb-0 footer-content copy-txt2">
+      <Link
+        href="/privacy-policy"
+        className="text-white text-decoration-none me-2"
+      >
+        Privacy Policy
+      </Link>
+      <span className="text-white"> | </span>
+      <Link
+        href="/disclaimer"
+        className="text-white text-decoration-none ms-2"
+      >
+        Disclaimer
+      </Link>
+    </p>
+
+  </div>
+</div>
+
     </footer>
   );
 }
