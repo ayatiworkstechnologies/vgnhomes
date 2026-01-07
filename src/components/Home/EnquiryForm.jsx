@@ -195,7 +195,7 @@ export default function EnquiryForm() {
               <div>
                 <label htmlFor="consent" className="form-check-label small m-0">
                   I authorize VGN and its representatives to
-                  contact me with updates and notifications via email, SMS,
+                  contact me with updates and notifications via email, SMS, RCS,
                   WhatsApp & call.{" "}
                   This will override the registry on DND/NDNC.
                   <span className="">*</span>
