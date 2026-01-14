@@ -25,11 +25,6 @@ import am5 from "@/assets/VgnMeridianHeights/icon-5.png";
 import am6 from "@/assets/VgnMeridianHeights/icon-6.png";
 import am7 from "@/assets/VgnMeridianHeights/icon-7.png";
 import am8 from "@/assets/VgnMeridianHeights/icon-8.png";
-import am9 from "@/assets/VgnMeridianHeights/icon-9.png";
-import am10 from "@/assets/VgnMeridianHeights/icon-10.png";
-import am11 from "@/assets/VgnMeridianHeights/icon-11.png";
-import am12 from "@/assets/VgnMeridianHeights/icon-12.png";
-import am13 from "@/assets/VgnMeridianHeights/icon-13.png";
 
 
 import high1 from "@/assets/vgn-heritage/ph1.jpg";
@@ -98,7 +93,7 @@ export default function EnquiryForm() {
       text: <>20 million sq.ft. of residential projects</>,
     },
   ];
-  const amenityIcons = [am1, am2, am3, am4, am5, am6, am7, am8, am9,am10, am11, am12, am13  ];
+  const amenityIcons = [am1, am2, am3, am4, am5, am6, am7, am8];
   const highlightImages = [high1, high2, high3, high4, high5, high6, high7, high8, high9, high10, high11, high12, high13, high14, high15];
 
   const {
@@ -207,24 +202,24 @@ export default function EnquiryForm() {
                   </h4>
                 </div>
                 <p className="text-justify">
-                  Founded in 1942, VGN is a leader, visionary and a pioneer in the real estate business and stands out
-                  distinctly among its competitors. Headquartered in Chennai, we are one of the oldest and most
-                  trusted real estate companies. 83 Years of experience helped us create our own path by
-                  understanding our customer’s desires and helped us improve their quality of life by providing
-                  them with the best projects. And this has helped us become a brand that customers deeply trust.
+                  <strong>VGN Meridian Heights, Naturally High Ground</strong>. A place where your
+                  lifestyle rises above the ordinary. Set on an elevated landscape, it offers cleaner air, better
+                  ventilation, enhanced privacy, and scenic views that lift your everyday living. Situated at
+                  one of the most sought-after residential corridors of Chennai, Gerugambakkam places
+                  you close to everything essentials, including schools, colleges, hospitals, IT parks, and the
+                  airport, while offering you the peace of a well-settled neighbourhood.
+                  Gerugambakkam’s rising demand makes this plotted development a smart choice for
+                  homeowners and investors alike. With continuous growth in social infrastructure and IT
+                  hubs nearby, your land value is set to grow year after year.
+                  Move beyond the limits of four-wall living and embrace a life with freedom, privacy, and
+                  your own boundaries. VGN Meridian Heights, you rise above the ordinary in both lifestyle
+                  and the way you live.
+
                 </p><p className="text-justify">
-                  We always believed in going the extra mile for our customers. That’s why just ordinary plotted
-                  developments weren’t enough. Every idea, every unique feature, and our passion reflected in our
-                  projects, and our customer family grew rapidly, making us a trustworthy brand.
-                </p><p className="text-justify">
-                  Our projects are spread across the city with plenty of happy families and investors reaping from
-                  their investments. Residential, commercial, retail and plots, we develop and transform land of
-                  every kind. With our expertise in consumer behavior, we have offered plots with unmatched
-                  quality, right from affordable to ultra-luxury.
-                </p><p className="text-justify">
-                  As much as we take pride in our range of offering, we are also proud of our industry-best practices,
-                  transparency and customer service. And this inspires us to do more and venture into many more
-                  challenges with confidence.
+                  Here, every plot becomes your personal point on the map - your own coordinate of
+                  freedom - free from the limitations of four walls. Set on naturally elevated land, VGN
+                  Experience a plotted development that blends elevation, nature, and living comfort, A rare
+                  combination that brings you truly “Heights with Life.”  use this content for about merdian description.
                 </p>
               </div>
 
@@ -259,52 +254,36 @@ export default function EnquiryForm() {
                 <div className="section-title">
                   <h4>Amenities</h4>
                 </div>
-
                 <div className="row">
                   {[
-                    {
-                      group: "Social Club",
-                      items: ["Multipurpose Hall", "Outdoor Café", "Double-Height Lobby"],
-                    },
-                    {
-                      group: "Family Wellness",
-                      items: ["Kid’s Play Zone", "Ball Pool", "Senior Lounge", "Yoga Room", "Library"],
-                    },
-                    {
-                      group: "Work & Fitness",
-                      items: ["Co-working Space", "Gym", "Activity Room"],
-                    },
-                    {
-                      group: "Spa & Entertainment",
-                      items: ["Luxury Spa", "Mini-Theatre"],
-                    },
-                  ].map((group, gIndex) => (
-                    <div key={gIndex} className="col-lg-6 col-md-6 col-12 mb-4">
-                      <div className="amenity-group-box">
-                        <h5 className="amenity-group-title">{group.group}</h5>
-
-                        <div className="row">
-                          {group.items.map((title, i) => (
-                            <div key={i} className="col-6 col-sm-6 col-md-6 col-lg-6 mb-3">
-                              <div className="servicebox text-center">
-                                <div className="service-icon mb-2">
-                                  <img
-                                    src={amenityIcons[i]}
-                                    alt={title}
-                                    style={{ height: "55px", objectFit: "contain" }}
-                                  />
-                                </div>
-                                <div className="servicetitle">
-                                  <h3>{title}</h3>
-                                </div>
-                              </div>
-                            </div>
-                          ))}
+                    "Retail Shop",
+                    "Association Office",
+                    "Association Meeting Room",
+                    "Gym",
+                    "Laundry",
+                    "Banquet Hall (146 Capacity)",
+                    "Dining Area",
+                    "Indoor Games"
+                  ]
+                    .map((title, i) => (
+                      <div
+                        key={i}
+                        className="col-4 col-sm-4 col-md-3 col-lg-3 mb-4"
+                      >
+                        <div className="servicebox text-center">
+                          <div className="service-icon mb-2">
+                            <img
+                              src={amenityIcons[i]}
+                              alt={`amenity-${i + 1}`}
+                              style={{ height: "70px", objectFit: "contain" }}
+                            />
+                          </div>
+                          <div className="servicetitle">
+                            <h3>{title}</h3>
+                          </div>
                         </div>
-
                       </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
               </div>
 
