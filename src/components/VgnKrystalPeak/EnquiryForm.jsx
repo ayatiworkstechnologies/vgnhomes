@@ -21,7 +21,7 @@ import kitchenImg from "@/assets/kitchen.jpg";
 import doorsImg from "@/assets/doors.jpg";
 import paintingImg from "@/assets/painting.jpg";
 import electricalImg from "@/assets/electrical.jpg";
-import plumbingImg from "@/assets/plumbing.jpg";
+import plumbingImg from "@/assets/Plumbing.jpg";
 import commonImg from "@/assets/cctv.jpg";
 
 import am1 from "@/assets/vgn-grandeur/am1.png";
