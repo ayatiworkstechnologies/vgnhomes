@@ -99,7 +99,6 @@ export default function EnquiryForm() {
     },
   ];
   const amenityIcons = [am1, am2, am3, am4, am5, am6, am7, am8, am9,am10, am11, am12, am13  ];
-
   const highlightImages = [high1, high2, high3, high4, high5, high6, high7, high8, high9, high10, high11, high12, high13, high14, high15];
 
   const {
