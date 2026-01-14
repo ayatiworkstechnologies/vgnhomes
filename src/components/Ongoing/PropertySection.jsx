@@ -18,10 +18,20 @@ import VGNMugavariPhase from "@/assets/ongoing/project10-1.jpg";
 
 import VGNVarnabhoomi from "@/assets/ongoing/project5.jpg";
 import CelebrityFarms from "@/assets/ongoing/project25.jpg";
+import VgnMeridianHeights from "@/assets/VgnMeridianHeights/Meridian-Heights.jpg";
 
 
 const properties = [
  
+  {
+    title: "VGN Meridian Heights ",
+    location: "Gerugambakkam, Chennai.",
+    type: "Plots",
+    size: "-",
+    status: "Lonching Soon",
+    image: VgnMeridianHeights,
+  link: "/vgn-meridian-heights/index",
+  },
   {
     title: "Celebrity Farms",
     location: "Opp. Mahindra world city.",

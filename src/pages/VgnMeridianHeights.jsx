@@ -1,0 +1,64 @@
+import { useEffect, useRef, useState } from "react";
+
+import BrandIconSectionInner from "../components/BrandIconSectionIneer";
+import Banner from "../components/VgnMeridianHeights/Banner";
+import EnquiryForm from "../components/VgnMeridianHeights/EnquiryForm";
+import ExploreProjects from "../components/VgnMeridianHeights/ExploreProjects";
+import SubFooter from "../components/VgnMeridianHeights/SubFooter";
+import Faq from "../components/Nri/Faq";
+
+import '../style/VgnMeridianHeights.css';
+import SubNav from "../components/VgnMeridianHeights/SubNav";
+
+import VgnAdvantages from '../components/Home/VgnAdvantages';
+
+
+export default function VgnMeridianHeights() {
+  const bannerRef = useRef(null);
+  const [showSubNav, setShowSubNav] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowSubNav(entry.intersectionRatio < 0.3);
+
+        const mainNavbar = document.querySelector(".custom-navbar");
+        if (mainNavbar) {
+          if (entry.intersectionRatio < 0.3) {
+            mainNavbar.classList.add("d-none");
+          } else {
+            mainNavbar.classList.remove("d-none");
+          }
+        }
+      },
+      { root: null, threshold: [0, 0.3, 1] }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+    return () => {
+      if (bannerRef.current) observer.unobserve(bannerRef.current);
+    };
+  }, []);
+
+  return (
+    <div>
+      {/* ✅ Banner */}
+      <div ref={bannerRef}>
+        <Banner />
+      </div>
+
+      {/* ✅ Sticky SubNav */}
+      {showSubNav && <SubNav />}
+
+      {/* ✅ Page Sections */}
+      <div className="pt-20 md:pt-28">
+        <EnquiryForm />
+        <ExploreProjects />
+        {/* <VgnAdvantages/> */}
+        <Faq />
+        <BrandIconSectionInner />
+        <SubFooter />
+      </div>
+    </div>
+  );
+}

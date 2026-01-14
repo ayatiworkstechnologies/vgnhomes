@@ -27,6 +27,7 @@ import VgnMugavari from "@/pages/VgnMugavari";
 // import VgnSouthernMedows from "@/pages/VgnSouthernMedows";
 import VgnVarnabhoomi from "@/pages/VgnVarnabhoomi";
 import VgnSamudra from "@/pages/VgnSamudra";
+import VgnMeridianHeights from "@/pages/VgnMeridianHeights";
 
 import Channel from "@/pages/Channel";
 import Land from "@/pages/Land";
@@ -74,6 +75,8 @@ const router = createBrowserRouter([
       // { path: "vgn-southernmeadows/index", element: <VgnSouthernMedows /> },
       { path: "vgn-varnabhoomi/index", element: <VgnVarnabhoomi /> },
       { path: "vgn-samudra/index", element: <VgnSamudra /> },
+      { path: "vgn-meridian-heights/index", element: <VgnMeridianHeights /> },
+
 
       { path: "channel-partner", element: <Channel /> },
       { path: "land-enquiry", element: <Land /> },
