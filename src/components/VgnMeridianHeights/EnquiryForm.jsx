@@ -17,15 +17,20 @@ const videoUrls = [
 
 import VgnMeridianHeightsLogo from "@/assets/VgnMeridianHeights/logo.webp";
 
-import am1 from "@/assets/vgn-heritage/am1.png";
-import am2 from "@/assets/vgn-heritage/am2.png";
-import am3 from "@/assets/vgn-heritage/am4.png";
-import am4 from "@/assets/vgn-heritage/am8.png";
-import am5 from "@/assets/vgn-heritage/am11.png";
-import am6 from "@/assets/vgn-heritage/am12.png";
-import am7 from "@/assets/vgn-heritage/am20.png";
-import am8 from "@/assets/vgn-heritage/am18.png";
-import am9 from "@/assets/vgn-heritage/am19.png";
+import am1 from "@/assets/VgnMeridianHeights/icon-1.png";
+import am2 from "@/assets/VgnMeridianHeights/icon-2.png";
+import am3 from "@/assets/VgnMeridianHeights/icon-3.png";
+import am4 from "@/assets/VgnMeridianHeights/icon-4.png";
+import am5 from "@/assets/VgnMeridianHeights/icon-5.png";
+import am6 from "@/assets/VgnMeridianHeights/icon-6.png";
+import am7 from "@/assets/VgnMeridianHeights/icon-7.png";
+import am8 from "@/assets/VgnMeridianHeights/icon-8.png";
+import am9 from "@/assets/VgnMeridianHeights/icon-9.png";
+import am10 from "@/assets/VgnMeridianHeights/icon-10.png";
+import am11 from "@/assets/VgnMeridianHeights/icon-11.png";
+import am12 from "@/assets/VgnMeridianHeights/icon-12.png";
+import am13 from "@/assets/VgnMeridianHeights/icon-13.png";
+
 
 import high1 from "@/assets/vgn-heritage/ph1.jpg";
 import high2 from "@/assets/vgn-heritage/ph2.jpg";
@@ -93,7 +98,7 @@ export default function EnquiryForm() {
       text: <>20 million sq.ft. of residential projects</>,
     },
   ];
-  const amenityIcons = [am1, am2, am3, am4, am5, am6, am7, am8, am9];
+  const amenityIcons = [am1, am2, am3, am4, am5, am6, am7, am8, am9,am10, am11, am12, am13  ];
 
   const highlightImages = [high1, high2, high3, high4, high5, high6, high7, high8, high9, high10, high11, high12, high13, high14, high15];
 
