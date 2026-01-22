@@ -30,7 +30,7 @@ const properties = [
     size: "-",
     status: "Lonching Soon",
     image: VgnMeridianHeights,
-  link: "/vgn-meridian-heights/index",
+  // link: "/vgn-meridian-heights/index",
   },
   {
     title: "Celebrity Farms",

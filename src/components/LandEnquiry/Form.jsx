@@ -21,7 +21,7 @@ export default function LandEnquiryForm() {
   const payload = {
     name: data.name,
     email: data.email,
-    mobile: data.phone,
+    mobile: data.phone.replace(/^91/, ""),
     location: data.location,
     message: data.message,
   };
@@ -73,7 +73,7 @@ export default function LandEnquiryForm() {
               </div>
 
               <div className="w-100">
-                <Controller
+                {/* <Controller
                   name="phone"
                   control={control}
                   rules={{ required: "Phone number is required" }}
@@ -108,7 +108,40 @@ export default function LandEnquiryForm() {
                       }}
                     />
                   )}
-                />
+                /> */}
+                <Controller
+  name="phone"
+  control={control}
+  rules={{ required: "Phone number is required" }}
+  render={({ field }) => (
+    <PhoneInput
+      {...field}
+      country={"in"}
+      value={field.value}
+      onChange={(value) => field.onChange(value)}
+      enableSearch
+      placeholder="Phone Number*"
+      inputProps={{ name: "phone", required: true }}
+      inputStyle={{
+        width: "100%",
+        height: "50px",
+        fontSize: "16px",
+        paddingLeft: "58px",
+        border: "1px solid #ccc",
+        borderRadius: "4px",
+        color: "#555",
+      }}
+      buttonStyle={{
+        border: "none",
+        background: "transparent",
+      }}
+      containerStyle={{
+        width: "100%",
+      }}
+    />
+  )}
+/>
+
                 {errors.phone && <div className="text-danger mt-1 small">{errors.phone.message}</div>}
               </div>
             </div>

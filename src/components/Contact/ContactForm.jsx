@@ -23,7 +23,9 @@ export default function ContactSupportForm() {
     const payload = {
       name: data.name,
       email: data.email,
-      mobile: data.mobile, // or data.phone depending on your field name
+      // mobile: data.mobile, // or data.phone depending on your field name
+      mobile: data.phone.replace(/^91/, ""), // strip here safely
+
       message: data.message,
     };
 
@@ -83,7 +85,7 @@ export default function ContactSupportForm() {
           {/* Mobile */}
           <Col lg={4}>
             <Form.Group controlId="mobile4">
-              <Controller
+              {/* <Controller
                 name="mobile"
                 control={control}
                 rules={{ required: "Phone number is required" }}
@@ -111,7 +113,40 @@ export default function ContactSupportForm() {
                     containerStyle={{ width: "100%" }}
                   />
                 )}
+              /> */}
+              <Controller
+                name="phone"
+                control={control}
+                rules={{ required: "Phone number is required" }}
+                render={({ field }) => (
+                  <PhoneInput
+                    {...field}
+                    country={"in"}
+                    value={field.value}
+                    onChange={(value) => field.onChange(value)}
+                    enableSearch
+                    placeholder="Phone Number*"
+                    inputProps={{ name: "phone", required: true }}
+                    inputStyle={{
+                      width: "100%",
+                      height: "50px",
+                      fontSize: "16px",
+                      paddingLeft: "58px",
+                      border: "1px solid #ccc",
+                      borderRadius: "4px",
+                      color: "#555",
+                    }}
+                    buttonStyle={{
+                      border: "none",
+                      background: "transparent",
+                    }}
+                    containerStyle={{
+                      width: "100%",
+                    }}
+                  />
+                )}
               />
+
               {errors.mobile && (
                 <div className="text-danger mt-1">{errors.mobile.message}</div>
               )}

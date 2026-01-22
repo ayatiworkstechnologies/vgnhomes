@@ -22,7 +22,9 @@ export default function ChannelForm() {
     const payload = {
       name: data.name,
       email: data.email,
-      mobile: data.phone,
+      // mobile: data.phone,
+      mobile: data.phone.replace(/^91/, ""), // strip here safely
+
       company_name: data.company,
       address: data.address,
       org_type: data.orgType,
@@ -60,7 +62,11 @@ export default function ChannelForm() {
             </h4>
           </div>
 
-          <Form className="cc-form p-4" onSubmit={handleSubmit(onSubmit)} noValidate>
+          <Form
+            className="cc-form p-4"
+            onSubmit={handleSubmit(onSubmit)}
+            noValidate
+          >
             <Row className="gy-3">
               {/* Name */}
               <Col lg={6}>
@@ -80,7 +86,7 @@ export default function ChannelForm() {
               {/* Phone */}
               <Col lg={6}>
                 <Form.Group controlId="phone">
-                  <Controller
+                  {/* <Controller
                     name="phone"
                     control={control}
                     defaultValue=""
@@ -124,6 +130,38 @@ export default function ChannelForm() {
                           </div>
                         )}
                       </>
+                    )}
+                  /> */}
+                  <Controller
+                    name="phone"
+                    control={control}
+                    rules={{ required: "Phone number is required" }}
+                    render={({ field }) => (
+                      <PhoneInput
+                        {...field}
+                        country={"in"}
+                        value={field.value}
+                        onChange={(value) => field.onChange(value)}
+                        enableSearch
+                        placeholder="Phone Number*"
+                        inputProps={{ name: "phone", required: true }}
+                        inputStyle={{
+                          width: "100%",
+                          height: "50px",
+                          fontSize: "16px",
+                          paddingLeft: "58px",
+                          border: "1px solid #ccc",
+                          borderRadius: "4px",
+                          color: "#555",
+                        }}
+                        buttonStyle={{
+                          border: "none",
+                          background: "transparent",
+                        }}
+                        containerStyle={{
+                          width: "100%",
+                        }}
+                      />
                     )}
                   />
                 </Form.Group>

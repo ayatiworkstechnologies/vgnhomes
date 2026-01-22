@@ -15,40 +15,45 @@ export default function SalesForm() {
     reset,
     formState: { errors },
   } = useForm();
-const onSubmit = async (data) => {
-  // Map form fields to API payload format
-  const payload = {
-    name: data.name,
-    email: data.email,
-    mobile: data.phone, // changed from data.phone to data.mobile
-    project: data.project,
-    message: data.message,
-  };
-
-  try {
-    const result = await SalesEnquiry(payload);
-
-    toast.success("Form submitted successfully!", {
-      position: "bottom-right",
-      autoClose: 3000,
-    });
-
-    reset(); // Clear form after success
-  } catch (error) {
-    console.error("Submission error:", error);
-
-    toast.error("Submission failed. Please try again.", {
-      position: "bottom-right",
-      autoClose: 3000,
-    });
-  }
+  const onSubmit = async (data) => {
+    // Map form fields to API payload format
+    // const payload = {
+    //   name: data.name,
+    //   email: data.email,
+    //   mobile: data.phone, // changed from data.phone to data.mobile
+    //   project: data.project,
+    //   message: data.message,
+    // };
+const payload = {
+  name: data.name,
+  email: data.email,
+  mobile: data.phone.replace(/^91/, ""), // strip here safely
+  project: data.project,
+  message: data.message,
 };
 
- 
+    try {
+      const result = await SalesEnquiry(payload);
+
+      toast.success("Form submitted successfully!", {
+        position: "bottom-right",
+        autoClose: 3000,
+      });
+
+      reset(); // Clear form after success
+    } catch (error) {
+      console.error("Submission error:", error);
+
+      toast.error("Submission failed. Please try again.", {
+        position: "bottom-right",
+        autoClose: 3000,
+      });
+    }
+  };
 
   return (
     <section className="contact-form-section spad py-5 bg">
-       <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={3000} />
       <div className="container">
         <div className="custom-form-wrapper mx-auto p-4 p-md-5 bg-white shadow-sm">
           <div className="heading text-center mb-4">
@@ -84,8 +89,7 @@ const onSubmit = async (data) => {
                       {...field}
                       country={"in"}
                       value={field.value}
-                      onChange={(value) => field.onChange(value.replace(/^91/, ""))}
-                      disableCountryCode
+                      onChange={(value) => field.onChange(value)}
                       enableSearch
                       placeholder="Phone Number*"
                       inputProps={{ name: "phone", required: true }}
@@ -108,6 +112,7 @@ const onSubmit = async (data) => {
                     />
                   )}
                 />
+
                 {errors.phone && (
                   <small className="text-danger">{errors.phone.message}</small>
                 )}
@@ -136,7 +141,9 @@ const onSubmit = async (data) => {
               <div className="w-100">
                 <select
                   className="form-select custom-select"
-                  {...register("project", { required: "Please select a project" })}
+                  {...register("project", {
+                    required: "Please select a project",
+                  })}
                 >
                   <option value="">Select Projects*</option>
                   <option value="Highland">VGN Highland</option>
@@ -145,19 +152,33 @@ const onSubmit = async (data) => {
                   <option value="Classique">VGN Classique</option>
                   <option value="Serene">VGN Serene</option>
                   <option value="Pride">VGN Pride</option>
-                  <option value="Brillianze Phase II">VGN Brillianze Phase II</option>
+                  <option value="Brillianze Phase II">
+                    VGN Brillianze Phase II
+                  </option>
                   <option value="Westfield">VGN Westfield</option>
-                  <option value="Mahalakshmi nagar Phase XIV">VGN Mahalakshmi nagar Phase XIV</option>
+                  <option value="Mahalakshmi nagar Phase XIV">
+                    VGN Mahalakshmi nagar Phase XIV
+                  </option>
                   <option value="CH40">VGN CH40</option>
-                  <option value="Mugavari Phase II">VGN Mugavari Phase - II</option>
-                  <option value="Windsor Park Phase IV - 1G">VGN Windsor Park Phase IV - 1G</option>
+                  <option value="Mugavari Phase II">
+                    VGN Mugavari Phase - II
+                  </option>
+                  <option value="Windsor Park Phase IV - 1G">
+                    VGN Windsor Park Phase IV - 1G
+                  </option>
                   <option value="Southern Meadows">VGN Southern Meadows</option>
                   <option value="Exotica">VGN Exotica</option>
-                  <option value="Varnabhoomi Phase II">VGN Varnabhoomi Phase II</option>
-                  <option value="Windsor Park Phase VII">VGN Windsor Park Phase VII</option>
+                  <option value="Varnabhoomi Phase II">
+                    VGN Varnabhoomi Phase II
+                  </option>
+                  <option value="Windsor Park Phase VII">
+                    VGN Windsor Park Phase VII
+                  </option>
                 </select>
                 {errors.project && (
-                  <small className="text-danger">{errors.project.message}</small>
+                  <small className="text-danger">
+                    {errors.project.message}
+                  </small>
                 )}
               </div>
             </div>
